@@ -27,14 +27,13 @@ export default function DesktopNavbar() {
           />
         </Link>
       </div>
-      <ul className="flex flex-1 justify-evenly items-center ml-8 space-x-4">
+      <ul className="flex flex-1 justify-evenly items-center ml-8 gap-2 pr-6 overflow-x-auto whitespace-nowrap scrollbar-thin scrollbar-thumb-gray-300 list-none">
         {navLinks.map((l) => (
-          <li key={l.href}>
+          <li key={l.href} className="basis-0 grow">
             <Link
               href={l.href}
-              className="px-8 h-16 flex items-center justify-center rounded-full font-semibold text-lg shadow-md transition bg-pgp-aqua text-white 
-                hover:bg-pgp-gold hover:text-pgp-charcoal hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-pgp-gold whitespace-nowrap"
-              style={{ minWidth: "170px", textAlign: "center" }}
+              className="px-4 py-4 flex items-center justify-center rounded-full font-semibold text-base shadow-md transition bg-pgp-aqua !text-white
+                hover:bg-pgp-gold hover:!text-white hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-pgp-gold whitespace-nowrap text-center w-full"
             >
               {l.name}
             </Link>

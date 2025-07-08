@@ -14,7 +14,7 @@ export default function MobileNav({ navLinks }: NavLinksProps) {
   return (
     <>
       {/* Mobile Navbar */}
-      <nav className="sm:hidden flex items-center justify-between w-full px-5 py-3">
+      <nav className="lg:hidden flex items-center justify-between w-full px-5 py-3">
         <Link href="/" className="flex items-center py-2 hover:opacity-90 transition-opacity">
           <Image
             src="/logo-pgp.png"
@@ -35,7 +35,7 @@ export default function MobileNav({ navLinks }: NavLinksProps) {
       </nav>
       {/* Mobile Menu Overlay */}
       {mobileNavOpen && (
-        <div className="fixed inset-0 z-50 flex flex-col bg-black bg-opacity-90 transition-all">
+        <div className="lg:hidden fixed inset-0 z-50 flex flex-col bg-black bg-opacity-90 transition-all">
           <div className="flex justify-end py-5 px-6">
             <button
               aria-label="Close menu"
